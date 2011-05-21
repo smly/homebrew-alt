@@ -1,9 +1,9 @@
 require 'formula'
 
 class Perl < Formula
-  url 'http://www.cpan.org/src/5.0/perl-5.12.3.tar.gz'
+  url 'http://www.cpan.org/src/5.0/perl-5.14.0.tar.gz'
   homepage 'http://www.perl.org/'
-  md5 '29975a69dce54e47fcd6331c085c6c99'
+  md5 'e7457deea78330c5f8eebb2fd2a45479'
 
   def install
     system("rm -f config.sh Policy.sh");
