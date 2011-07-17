@@ -55,8 +55,8 @@ end
 
 class Gcc < Formula
   homepage 'http://gcc.gnu.org'
-  url 'ftp://ftp.gnu.org/gnu/gcc/gcc-4.6.0/gcc-4.6.0.tar.bz2'
-  md5 '93d1c436bf991564524701259b6285a2'
+  url 'ftp://ftp.gnu.org/gnu/gcc/gcc-4.6.1/gcc-4.6.1.tar.bz2'
+  md5 'c57a9170c677bf795bdc04ed796ca491'
 
   depends_on 'gmp'
   depends_on 'libmpc'
@@ -107,7 +107,7 @@ class Gcc < Formula
       "--with-mpc=#{libmpc.prefix}",
       "--with-system-zlib",
       "--enable-stage1-checking",
-      "--disable-lto" # Change to enable when 4.6.1 is released
+      "--enable-lto"
     ]
 
     args << '--disable-nls' unless nls?
